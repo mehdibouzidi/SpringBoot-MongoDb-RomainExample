@@ -5,14 +5,14 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Adress {
+public class Address {
     private String city;
     private String country;
 
-    public Adress() {
+    public Address() {
     }
 
-    public Adress(String city, String country) {
+    public Address(String city, String country) {
         this.city = city;
         this.country = country;
     }

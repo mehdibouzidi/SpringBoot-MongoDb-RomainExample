@@ -19,17 +19,17 @@ public class Hotel {
     private String name;
     @Indexed(direction = IndexDirection.ASCENDING)
     private int pricePerNight;
-    private Adress adress;
+    private Address address;
     private List<Review> reviews;
 
     public Hotel() {
         this.reviews = new ArrayList<>();
     }
 
-    public Hotel(String name, int pricePerNight, Adress adress, List<Review> reviews) {
+    public Hotel(String name, int pricePerNight, Address address, List<Review> reviews) {
         this.name = name;
         this.pricePerNight = pricePerNight;
-        this.adress = adress;
+        this.address = address;
         this.reviews = reviews;
     }
 }
